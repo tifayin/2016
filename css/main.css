@@ -235,6 +235,9 @@ ul{
     max-width: 760px;
     margin: 0 auto;
     padding: 30px 0;
+    height: 50%; 
+    overflow: auto;
+
 }
 .work-item:before{
     content: "";
