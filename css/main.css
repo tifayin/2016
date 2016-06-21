@@ -148,13 +148,6 @@ header {
 
 /*=====================MAIN=====================*/
 
-.tifa .fp-tableCell .box,
-.about .fp-tableCell .box,
-.contact .fp-tableCell .box{  
-    line-height: 1.5;
-    margin: 0 auto;
-    max-width: 600px; 
-}
 
 h1 { 
     text-align: center;
@@ -310,8 +303,7 @@ ul{
 
 /*=====================4.CONTACT=====================*/
 
-.contact .box{
-}
+
 
 .contact li{
     display: inline;
