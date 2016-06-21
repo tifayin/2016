@@ -11,29 +11,31 @@
         <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
 
         <link rel="stylesheet" type="text/css" href="./css/main.css">
-        <link rel="shortcut icon" type="image/gif" href="./img/favicon.ico">
-       
-	    <link rel="bookmark" type="image/gif" href="./img/favicon.ico"/>
-        
-        <link rel="stylesheet" type="text/css" href="./css/jquery.fullPage.css" />
     
-        <script type="text/javascript" src="./js/scrolloverflow.js"></script>
+        <link rel="shortcut icon" type="image/gif" href="./img/favicon.ico">
+	    <link rel="bookmark" type="image/gif" href="./img/favicon.ico"/>
+        <!--
+        <link rel="stylesheet" type="text/css" href="./css/jquery.fullPage.css" />
         <script type="text/javascript" src="./js/jquery-1.6.1.min.js"></script>
         <script type="text/javascript" src="./js/jquery.fullPage.min.js"></script>
-        
+        -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.8.1/jquery.fullPage.css">
+        <script src="http://cdn.staticfile.org/jquery/1.8.3/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.8.1/jquery.fullPage.min.js"></script>
+
+    
         <script type="text/javascript">
             $(document).ready(function() {
                 $('#fullpage').fullpage({
+                    
+                    menu: '#Menu',
                     css3: true,
-                    menu: '#menu',
                     anchors: ['tifa', 'about', 'work', 'contact'],
 				    loopBottom: true,
                     navigation: true,
-				    navigationPosition: 'right',
-				    navigationTooltips: ['tifa', 'about', 'work', 'contact'],
-                                    
-                   
-      
+                    navigationPosition: 'right',
+                    navigationTooltips: ['tifa', 'about', 'work', 'contact'],
+
                 });
             });
 
@@ -66,24 +68,26 @@
             <div id="myNav" class="overlay">
                 <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
                 <div class="overlay-content">
-                    <a href="#tifa">Tifa</a>
-                    <a href="#about">About</a>
-                    <a href="#work">Work</a>
-                    <a href="#contact">Contact</a>
+                <ul id="Menu">
+                    <li data-menuanchor="tifa"><a href="#tifa">Tifa</a></li>
+                    <li data-menuanchor="about"><a href="#about">About</a></li>
+                    <li data-menuanchor="work"><a href="#work">Work</a></li>
+                    <li data-menuanchor="contact"><a href="#contact">Contact</a></li>
                 </div>
             </div>
-            <div class="respon-nav" style="font-size:40px; cursor:pointer; padding: 15px;" onclick="openNav()">☰</div>
+            <div class="respon-nav" 
+                 style="font-size:40px; cursor:pointer; padding: 15px;" onclick="openNav()">☰</div>
         </header>
         
         <div id="fullpage">
             
         <!-----------------MAIN----------------->
-        <section class="section tifa" >
+        <section class="section tifa">
             
-            <div class="box">
+            
                 <h1>TIFA YIN</h1>
                 <!--<h2>Web Designer / Illustrator</h2>-->
-            </div> 
+            
             
             <div class="avatar">   
           
@@ -131,8 +135,8 @@
             
         </section>
         <!-----------------ABOUT----------------->
-        <section class="section about" >
-            <div class="box">
+        <section class="section about">
+            
                 
                 <h1>ABOUT</h1>
                 
@@ -143,7 +147,7 @@
                 In my free time I love illustrates, you can see my illustrations in <a href="#" target="_blank">Tumblr</a>.
                 </p>
 
-            </div>
+            
                 <a target="_blank" href="https://www.dropbox.com">
                 <div class="button"> Resume </div>
                 </a>
@@ -152,8 +156,8 @@
             
         </section>
         <!-----------------WORK----------------->
-        <section class="section work" >
-            <div class="box">    
+        <section class="section work">
+           
             <h1>WORK</h1>
             
                 <div class="work-inner">
@@ -184,13 +188,13 @@
                 </div>
 
                
-            </div>
+        
 
                
         </section>
         <!---------------CONTACT--------------->
-        <section class="section contact" >
-            <div class="box" style="text-align: center;">
+        <section class="section contact">
+            
                 <h1>CONTACT</h1>  
                 
                     
@@ -205,7 +209,7 @@
 
                     </ul>
                     
-            </div>
+            
         </section>  
             
         </div>
