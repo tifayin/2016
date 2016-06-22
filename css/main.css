@@ -137,13 +137,22 @@ header {
     
 }
 
-@media screen and (max-height: 450px) {
-  .overlay a {font-size: 20px}
+@media screen and (max-width: 480px) {
+  .overlay a {
+      font-size: 30px!important;
+  }
   .closebtn {
     font-size: 40px !important;
-    top: 15px;
-    right: 35px;
+    top: 0px;
+    right: 0px;
   }
+  .overlay-content{
+    top:10%;
+  }
+    
+   ul#Menu{
+    margin: 0 auto;
+   }
 }
 
 /*=====================#fp-nav=====================*/
