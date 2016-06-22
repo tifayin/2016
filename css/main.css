@@ -31,7 +31,7 @@ section, article, header, footer, nav, aside {
 
 body { 
     font-size: 16px;
-    background: #ECECEC;
+    background: #E6E7E8;
     line-height: 1;
     color: #444;
 }
@@ -146,6 +146,18 @@ header {
   }
 }
 
+/*=====================#fp-nav=====================*/
+
+
+#fp-nav ul li .fp-tooltip {
+
+    color: #111!important;
+    font-size: 14px;
+    font-family: 'Montserrat', '微軟正黑體', Helvetica, Arial, sans-serif!important;
+    text-transform: uppercase!important;
+
+}
+
 /*=====================MAIN=====================*/
 
 
@@ -186,7 +198,7 @@ ul{
 /*=====================1.TIFA=====================*/
 .tifa{
     /*background: #fff url('bg.png') center center; */
-    background: #ddd;
+    background: #f1f2f2;
     background-repeat: no-repeat; 
     /*width: 100%;
     height: 874px;*/
@@ -226,10 +238,14 @@ ul{
 /*=====================3.WORK=====================*/
 
 .work{
-    background: #a8d0e6;/*rgb(124, 204, 190)*/
+    background: #B7E5E4;
     text-align: center;   
 }
 
+.illustration{
+    background: #ABD3D3;
+    text-align: center;   
+}
 .work-inner{
     max-width: 800px;
     margin: 0 auto;
@@ -305,7 +321,9 @@ ul{
 
 /*=====================4.CONTACT=====================*/
 
-
+.contact{
+    background: #8EC2CF;
+}
 
 .contact li{
     display: inline;
@@ -380,7 +398,8 @@ ul{
         font-size: 14px;
     }
 
-    .work{
+    .work,
+    .illustration{
         padding: 30px 0px;
     }
     
