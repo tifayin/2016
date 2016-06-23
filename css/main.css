@@ -33,13 +33,18 @@ body {
     font-size: 16px;
     background: #E6E7E8;
     line-height: 1;
-    color: #444;
+    color: #333;
 }
 
 a {
+    line-height: 30px;
     text-decoration: none;
     color: #333;
     font-weight: 700;
+    -moz-transition: color 0.1s ease;
+    -o-transition: color 0.1s ease;
+    -webkit-transition: color 0.1s ease;
+    transition: color 0.1s ease;
 }
 
 a:hover,
@@ -69,11 +74,41 @@ img {
 }*/
 
 
+/*=====================MAIN=====================*/
+
+h1,h2 {
+    text-align: center;
+    font-weight: 700;
+    font-family: 'Montserrat', '微軟正黑體', Helvetica, Arial, sans-serif; 
+}
+h1 { 
+    font-size: 35px;  
+    line-height: 65px;
+    margin-bottom: 30px;  
+}
+
+h2 {
+    font-size: 20px;
+    line-height: 20px;
+    margin-bottom: 25px;   
+}
+
+p {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 30px;
+    max-width: 600px;
+    margin: 0 auto;  
+}
+
+ul{
+    margin: 0 auto;
+    text-align: center;
+    line-height: 30px;
+}
 /*=====================HEADER MENU=====================*/
 
 header {
-    /*background: rgba(255, 255, 255, 0.9);*/
-    /*width: 100%;*/
     display: block;
     height: 80px;
     margin: 0 auto;
@@ -82,18 +117,6 @@ header {
     font-weight: 700;
     text-transform: uppercase;
 }
-
-/*
-#menu{
-    text-align: center;
-}
-#menu li{
-    padding: 30px 20px;
-    display: inline-block;
-    position: relative;
-}*/
-
-/*=====================Fullscreen MENU=====================*/
 
 .overlay {
     height: 100%;
@@ -118,14 +141,14 @@ header {
 
 .overlay a {
     padding: 15px;
-    text-decoration: none;
     font-size: 36px;
     color: #888;
     display: block;
     transition: 0.3s;
 }
 
-.overlay a:hover, .overlay a:focus {
+.overlay a:hover, 
+.overlay a:focus {
     color: #fff;
 }
 
@@ -141,77 +164,35 @@ header {
   .overlay a {
       font-size: 30px!important;
   }
+    
   .closebtn {
     font-size: 40px !important;
     top: 0px;
     right: 0px;
   }
+    
   .overlay-content{
     top:10%;
   }
-    
-   ul#Menu{
-    margin: 0 auto;
-   }
+
 }
 
 /*=====================#fp-nav=====================*/
 
-
 #fp-nav ul li .fp-tooltip {
-
-    color: #111!important;
-    font-size: 14px;
-    font-family: 'Montserrat', '微軟正黑體', Helvetica, Arial, sans-serif!important;
-    text-transform: uppercase!important;
-
-}
-
-/*=====================MAIN=====================*/
-
-
-h1 { 
-    text-align: center;
-    font-size: 35px;
-    font-weight: 700;
-    height: 65px;
-    line-height: 65px;
-    margin-bottom: 25px;
-    font-family: 'Montserrat', '微軟正黑體', Helvetica, Arial, sans-serif; 
-    
-}
-
-h2 {
-    text-align: center;
-    font-size: 20px;
-    font-weight: 700;
-    margin-bottom: 25px;
-    font-family: 'Montserrat', '微軟正黑體', Helvetica, Arial, sans-serif; 
-}
-
-p {
-    font-size: 16px;
-    font-weight: 400;
-    margin-bottom: 10px;
-    line-height: 30px;
-    max-width: 600px;
-    margin: 0 auto;
-    
-}
-
-ul{
-    margin: 10px 0;
-    text-align: center;
+    color: #333!important;
+    font-size: 10px;
+    font-family: 'Montserrat', '微軟正黑體', Helvetica, Arial, sans-serif!important
 }
 
 /*=====================1.TIFA=====================*/
+
 .tifa{
-    /*background: #fff url('bg.png') center center; */
+    /*background: #fff url('bg.png') center center; 
+    background-repeat: no-repeat; */
     background: #f1f2f2;
-    background-repeat: no-repeat; 
-    /*width: 100%;
-    height: 874px;*/
 }
+
 .avatar{
     text-align: center;   
 }
@@ -223,18 +204,15 @@ ul{
     margin: 30px auto;
     text-align: center;
     width: 100px;
-    color: #444;
-    font-weight: 400;
-    font-size: 16px;
     background: #fff;
+    padding: 15px 60px;
+    cursor: pointer;
     box-shadow: 0px 5px 20px 0px rgba(0,0,0,0.15);
     -webkit-box-shadow: 0px 5px 20px 0px rgba(0,0,0,0.15);
     -moz-box-shadow: 0px 5px 20px 0px rgba(0,0,0,0.15);
     border-radius: 3px;
     -moz-border-radius: 3px;
     -webkit-border-radius: 3px;
-    padding: 15px 60px;
-    cursor: pointer;
     transition: all 0.2s ease-out;
     -webkit-transition: all 0.2s ease-out;
     -moz-transition: all 0.2s ease-out;
@@ -248,27 +226,27 @@ ul{
 
 .work{
     background: #B7E5E4;
-    text-align: center;   
 }
 
 .illustration{
     background: #ABD3D3;
-    text-align: center;   
 }
-.work-inner{
-    max-width: 800px;
+
+.work-inner{  
     margin: 0 auto;
-    height: 60%; 
     overflow: auto;
+    height: 60%; 
+    max-width: 800px;
     max-height: 450px;
 
 }
+/*
 .work-item:before{
     content: "";
-}
+}*/
+
 .work-item {
     padding: 10px;
-    max-width: 220px;
     display: inline-block;
     position: relative;
     clear: left;
@@ -276,9 +254,9 @@ ul{
     border-radius: 3px;
     -moz-border-radius: 3px;
     -webkit-border-radius: 3px;
-    -webkit-box-shadow: 0 1px 2px rgba(0,0,0,0.07);
-    -moz-box-shadow: 0 1px 2px rgba(0,0,0,0.07);
-    box-shadow: 0 1px 2px rgba(0,0,0,0.07);
+    -webkit-box-shadow: 0 1px 2px rgba(0,0,0,0.08);
+    -moz-box-shadow: 0 1px 2px rgba(0,0,0,0.08);
+    box-shadow: 0 1px 2px rgba(0,0,0,0.08);
     margin: 0 15px 30px 15px;
 }
 
@@ -305,24 +283,20 @@ ul{
 .work-item span {
     position: absolute;
     z-index: 999;
-    
-    border-radius: 3px;
-    -moz-border-radius: 3px;
-    -webkit-border-radius: 3px;
-
-    background: #fff;
-    color: #444;
+    /*background: #fff;*/
+    color: #333;
     line-height: 40px;
     text-align: center;
     text-transform: uppercase;
-    
     width: 70%;
     height: 40px;
     top: 50%;
     margin-top: -20px;
     left: 15%;
     opacity: 0;
-    
+    border-radius: 3px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;    
     transition: all 0.2s;
     -moz-transition: all 0.2s;
     -webkit-transition: all 0.2s;
@@ -338,13 +312,6 @@ ul{
     display: inline;
 }
 
-.contact li a{
-    -moz-transition: color 0.1s ease;
-    -o-transition: color 0.1s ease;
-    -webkit-transition: color 0.1s ease;
-    transition: color 0.1s ease;
-}
-
 .contact li span:after{
     content: '\2022';
 }
@@ -355,48 +322,38 @@ ul{
 /*瀏覽區域的寬度大於481像素*/
 @media screen and (min-width: 481px){
 
-    /*.respon-nav,#myNav{
-        display: none;
-    }*/
 }
 
+/*瀏覽區域的寬度小於800像素*/
+@media screen and ( max-width: 800px ){
+
+    .work-inner{
+        max-width: 525px;
+    }
+    .work-item{
+        margin: 0 10px 30px 10px;
+    }
+}
 
 /*瀏覽區域的寬度小於600像素*/
 @media screen and ( max-width: 600px ){
-
-
-    p,
-    ul{
+    
+    p,ul{
         width: 80%;
-        padding: 20px 0px;
     }
     .work-inner{
-        max-width: 510px;
-        margin: 0 auto;
+        max-width: 260px;
+      
     }
 }
 
 
 /*瀏覽區域的寬度小於480像素*/
 @media screen and ( max-width: 480px ){
-    
-    /*header{
-        background: none;
-    }
-    .main-nav{
-        display: none;
-    }*/
 
-    p,
-    ul{
-        width: 90%;
-        padding: 20px 0px;
-    }
-    
     h1{
         font-size: 24px;
-        height: 65px;
-        line-height: 55px;
+        line-height: 50px;
     }
 
     h2{
@@ -404,21 +361,8 @@ ul{
     }
     
     p,ul{
+        width: 90%; 
         font-size: 14px;
-    }
+    }    
 
-    .work,
-    .illustration{
-        padding: 30px 0px;
-    }
-    
-    .work-item{
-        max-width: 200px;
-    }
-    
-    .work-inner{
-        max-width: 260px;
-        margin: 0 auto;
-    }
-    
 }
